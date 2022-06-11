@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
-    background: blue;
+    height: 100%;
+    background: rgba(26, 154, 214, 255);
     
     section{
         display: flex;
@@ -14,7 +14,71 @@
         background: rgb(134, 115, 115);
       
          
-      
+        .front{
+            width: 85vw;
+            height: 50vh;
+            background-image: url("../../assets/fachada.jpg");
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+
+            .title{
+                display: flex;
+                flex-direction: column  ;
+                align-items: center;
+                
+                font-size: 5rem;
+                color: blue;
+            }
+            
+        }
+        
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85vw;
+        height: 100vh;
+        background-color: beige;
+        
+        
+        .body_text{
+            display: flex;
+            flex-direction: column  ;
+            
+            color: white;
+            width: 50vw;
+            background-color: beige;
+
+
+            h1{
+                color: black;
+                font-size: 60px;
+                margin-bottom: 30px;
+            }
+            
+            h2{
+                color: black;
+                font-size: 20px;
+
+                p{
+                    margin-top: 20px;
+                }
+            }
+
+        }
+        
+        .rightside{
+            width: 30vw;
+            height: 30vw;
+            border-radius: 50%;
+            background-image: url("../../assets/sobreaside.jpeg");
+        }
+
+
     }
 }
 

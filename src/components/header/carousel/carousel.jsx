@@ -10,7 +10,7 @@ const CarouselApp = () => {
     <div className="carousel">
       <Carousel itemsToShow={1}>
       
-        <Item> </Item>
+        <Item>1</Item>
         <Item>2</Item>
         <Item>3</Item>
         <Item>4</Item>

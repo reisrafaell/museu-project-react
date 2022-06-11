@@ -1,38 +1,26 @@
-.homePage{
+.homePage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+
+  background: rgba(26, 154, 214, 255);
+
+  section {
     display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: blue;
-    
-    section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        width: 85vw;
-        background: rgb(134, 115, 115);
-        header{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 13vh;
-            background: rgb(88, 55, 55);
-            nav{
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-                ul{
-                    display: flex;
-                    width: 50vw;
-                    background: red;
-                    justify-content: space-around;
-                    font-size: 1.5rem;
-                }
-            }
-         
-        }
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85vw;
+   
+    .image {
+      width: 85vw;
+      height: 120vh;
+      background-image: url("../../assets/home.jpeg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
     }
+  }
 }

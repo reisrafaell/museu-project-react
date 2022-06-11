@@ -6,6 +6,7 @@ const Sobre = () => {
     return (
         <div className="sobrePage">
                <section>
+                
            <Header/>
 
           <h1>sobre</h1>

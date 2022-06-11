@@ -11,25 +11,48 @@
         align-items: center;
         justify-content: flex-start;
         width: 85vw;
-        background: rgb(134, 115, 115);
+        background: rgba(26, 154, 214, 255);
       
          
         .front{
             width: 85vw;
-            height: 50vh;
+            height: 90vh;
             background-image: url("../../assets/fachada.jpg");
             background-position: center;
             background-size: 100%;
             background-repeat: no-repeat;
+            background-color: rgba(26, 154, 214, 255);;
 
-
-            .title{
+            .image{
                 display: flex;
-                flex-direction: column  ;
-                align-items: center;
-                
-                font-size: 5rem;
-                color: blue;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 20vw;
+                height: 20vw;
+                color: #d86804;
+                background: #fff;
+                border-radius: 0 0  60%;
+                overflow-y: hidden;
+
+                h1{
+                    font-size: clamp(1rem, 2.5vw, 4rem);
+                    text-align: center;
+                    span{
+                        font-weight: 700;
+                                   
+                    }
+                }
+                img{
+                    width: 10vw;
+                    margin-left: 5vw;
+                }
+            }
+            .title{
+                font-size: clamp(1rem, 4.5vw, 6rem);
+                text-align: center;
+                margin-top: 12%;
+                color: white;
             }
             
         }
@@ -42,16 +65,16 @@
         justify-content: space-between;
         width: 85vw;
         height: 100vh;
-        background-color: beige;
+        background-color: white;
         
         
         .body_text{
             display: flex;
             flex-direction: column  ;
-            
+            margin-left: 1vw;
             color: white;
             width: 50vw;
-            background-color: beige;
+            background-color: white;
 
 
             h1{
@@ -63,6 +86,7 @@
             h2{
                 color: black;
                 font-size: 20px;
+                text-align: justify;
 
                 p{
                     margin-top: 20px;
@@ -76,6 +100,7 @@
             height: 30vw;
             border-radius: 50%;
             background-image: url("../../assets/sobreaside.jpeg");
+            
         }
 
 

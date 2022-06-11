@@ -1,6 +1,7 @@
 
 import Header from '../../components/header/header';
 import './sobre.scss'
+import icone from "../../assets/icone.png";
 
 const Sobre = () => {
     return (
@@ -11,14 +12,19 @@ const Sobre = () => {
 
                 <section className='front'>
                     <div>
-                        <icone></icone>
+                        
+                        <div className='image'>
+                            <h1>Museu Universitário <span>Academia</span> </h1>
+                            <img draggable="false" src={icone} alt="icone"></img>
+                                                        
+                        </div>
+                        
                         <div className='title'>
-                            <h1> Sobre o</h1>
-                            <h1> Museu</h1>
+                            <h1> Museu de Etnologia Indígena e História Natural</h1>
                         </div>
                     </div>
                 </section>
-
+                    <br></br>
                 <section className='content'>
                     <div className='body_text'>
                         <h1>

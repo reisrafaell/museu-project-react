@@ -1,41 +1,14 @@
-import "./home.scss";
+import * as S from "./home.styles";
+import { useNavigate } from "react-router-dom";
 
-import Header from "../../components/header/header";
-import CarouselApp from "../../components/header/carousel/carousel";
-import icone from "../../assets/icone.png";
 const Home = () => {
+  const nav = useNavigate();
 
-
-
-  
   return (
-    <div className="homePage">
-      <section>
-        <Header />
-        <div className="image">
-          <div>
-            <h1>Museu Universitário <span>Academia</span> </h1>
-            <img draggable="false" src={icone} alt="icone"></img>
-            
-
-          </div>
-          <h1 className="title">Museu de Etnologia Indígena e História Natural  </h1> 
-     
-        </div>
-        <main>
-          <div>
-            <div className="container">
-            <h1>Algumas de nossas Exposições</h1>
-
-            <CarouselApp/>
-            </div>
-
-          </div>
-         
-        </main>
-        {/* <CarouselApp/> */}
-      </section>
-    </div>
+    <S.Container>
+      <p>Home</p>
+      <button type="button" onClick={()=>{nav(`/Access`)}} >Proxima</button>
+    </S.Container>
   );
 };
 export default Home;
